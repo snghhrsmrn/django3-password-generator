@@ -15,7 +15,7 @@ def password(request):
         characters.extend('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
     if request.GET.get('specials'):
-        characters.extend('!@#$%^&*()-_=+[{\;:/?}]')
+        characters.extend('!@#$%^&*-_')
 
     if request.GET.get('numbers'):
         characters.extend('1234567890')
